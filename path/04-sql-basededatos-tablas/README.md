@@ -20,3 +20,33 @@ Para crear una base de datos y tablas usando SQL Server. Este es el punto de par
 ```sql
 CREATE DATABASE TiendaVirtual;
 GO
+```
+
+### 2. Seleccionar esa base de datos
+```sql
+USE TiendaVirtual;
+GO
+```
+
+### 3. Crear una tabla
+```sql
+CREATE TABLE Clientes (
+    ID INT PRIMARY KEY,
+    Nombre VARCHAR(100) NOT NULL,
+    Email VARCHAR(100),
+    FechaRegistro DATE DEFAULT GETDATE()
+);
+```
+### 4.Insertar datos
+```sql
+INSERT INTO Clientes (ID, Nombre, Email)
+VALUES 
+(1, 'Ana Ruiz', 'ana@email.com'),
+(2, 'Luis Torres', 'luis@email.com'),
+(3, 'Marta Chávez', NULL);
+```
+
+### 5. Visualización de datos
+```sql
+SELECT * FROM Clientes;
+```
