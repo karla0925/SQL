@@ -1,5 +1,4 @@
-# APRENDIENDO SQL
+# SQL SERVER
 
-> [README template](ruta/00-readme-template/README.md)
-
-- [01. Restore Database](ruta/01-restore-database/README.md)
+- [01. Instalar SQL Server](path/01-sql-server-installation/README.md)
+- [02. Instalar SQL Server Management Studio](path/02-ssms-installation/README.md)
